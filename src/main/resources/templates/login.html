@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row ">
+        <div class="col-sm-4 p-5 mx-auto centered">
+            <form th:action="@{/login}" th:method="post">
+                <h3> Please sign in </h3>
+                <div class="form-group text-center">
+                    <input type="email" class="form-control"
+                           name="username" id="email"
+                           placeholder="Email address">
+                    <input type="password" class="form-control"
+                           name="password" id="password"
+                           placeholder="Password">
+                </div>
+                <div class="col mx-auto centered" style="padding-right: 0; padding-left: 0">
+                    <div>
+                        <button type="submit" value="login"
+                                class="btn btn-primary btn-lg btn-block" style="padding-right: 0; padding-left: 0">
+                            Sing in
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
